@@ -15,7 +15,7 @@ export const BASE_URL = (() => {
 
         try {
             // @ts-expect-error
-            BASE_URL = import.meta.env.BASE_URL;
+            BASE_URL = undefined;
 
             assert(typeof BASE_URL === "string");
         } catch {
